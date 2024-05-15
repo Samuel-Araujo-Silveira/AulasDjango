@@ -1,0 +1,10 @@
+<table border='1'>
+    {% for pessoa in pessoas %}
+        <tr>
+            <td> {{pessoa.id}} </td>
+            <td>{{pessoa.cpf}} </td>
+            <td>{{pessoa.nome}}</td>
+            <td> <a href="/pessoa/{{ pessoa.id }}/">Ver detalhes</a> </td>
+        </tr>
+    {% endfor %}
+</table>
